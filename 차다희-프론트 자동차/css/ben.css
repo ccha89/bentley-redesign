@@ -1,0 +1,78 @@
+﻿@charset "utf-8";
+@import url(reset.css);
+
+
+body{margin:0; padding:0; font-family:arial;}
+#wrap{width:1700px; margin:0 auto;}
+	#header{background-color:black;}
+		h1{text-align:center;}
+		
+		#gnb{float:left; font-family:arial; margin-top:-90px; margin-left:40px;}
+			#gnb>li{position:relative; }
+			#gnb li a{ display:block; color:#fff; font-size:16px; text-decoration:none;}
+				.sub{position:absolute; display:none; top:100%;}
+				.sub li{width:100px;}
+				.sub li a{display:block; text-decoration:none;}
+				.sub li a:hover{ opacity:70%; text-decoration:none;}
+			#gnb>li:hover .sub{display:block;}	
+			.login{position:relative; top:-858px; left:1600px;}
+			
+		#container{margin:20px 0;}
+			h2{text-align:center; font-weight:bold; font-family:arial; font-size:30px; margin-top:30px; }
+				.content1{text-align:center;}
+					.content1 a{}
+					img{padding-top:10px;}
+					p{font-family:arial; font-size:16px;  float:left; color:white; margin-left:20px;  position:relative; top:-90px;}
+					span{display:block;}
+					a.orange{overflow:hidden; display:inline-block;}
+					a.orange img{height:auto; width:100%;transition: transform 0.3s ease;}
+					a.orange:hover img{transform: scale(1.1);}
+					a.gray{overflow:hidden; display:inline-block;}
+					a.gray img{height:auto; width:100%;transition: transform 0.3s ease;}
+					a.gray:hover img{transform: scale(1.1);}
+					a.blue{overflow:hidden; display:inline-block;}
+					a.blue img{height:auto; width:100%;transition: transform 0.3s ease;}
+					a.blue:hover img{transform: scale(1.1);}
+					a.red{overflow:hidden; display:inline-block;}
+					a.red img{height:auto; width:100%;transition: transform 0.3s ease;}
+					a.red:hover img{transform: scale(1.1);}
+					
+					.flying, .bentayga, .continental, .bentaygaEWB{font-size:40px; margin-right:80px; position:relative;}
+					.bentayga, .continental, .bentaygaEWB {top:-120px; }
+					.flying{top:-100px; }
+					
+				.content2{overflow:hidden; clear:both;}
+				
+				.content3{overflow:hidden; clear:both; margin:30px 0 0 40px; height:802px; margin-bottom:100px;}
+					.content3 img{float:left; margin-left:100px;}
+					.content3 .about {width:500px; height:802px; position:relative; left:60%;  }
+						.about .aboutB {position:relative; top:-600px; text-align:left; margin-left:20px;  }
+						.about .aboutB2{float:left; color:black;font-size:16px; position:relative; top:-570px; text-align:justify; line-height:150%;}
+						.about ul{position:relative; top:-65%;}
+						.about ul li{display:inline; color:#000; margin-left:20px;}
+						.about ul li a{text-decoration:none; padding:10px; border:1px solid green; }
+						.about ul li a:hover{background-color:green; color:white; }
+						
+				.content4 {background-color:black; color:#fff; overflow:hidden;  clear:both; height:440px;}
+					.content4 h3{margin:30px 20px; font-size:18px; color:white;}
+						.kor li{position:relative; top:10px; left:20px;  font-size:18px;}
+						.kor li a{color:white; position:relative; top:-20px; left:170px;  font-size:16px;}
+						.info{margin-left:160px; text-align:center; margin-left:200px;}
+							.info li{float:left; display:inline; font-size:16px; margin-right:100px; margin-top:50px;}
+							.info li a{display:block; margin-top:50px; background-color:#fff; color:black; width:300px; height:70px; line-height:70px; border-radius:10px;}
+							.info li .SNS{background-color:black; border:none;}
+			/**/
+				#footer{ background-color:black; text-align:center; color:#fff; margin-top:-20px;  padding-left:20px; }
+				#footer li{text-align:center; display:inline; font-size:12px; margin-bottom:10px; margin-right:10px; }
+				#footer li a{color:#fff;}
+				address{clear:both;  color:#fff; padding-bottom:20px;}
+					
+					
+					
+					
+					
+					
+					
+						
+					
+					
