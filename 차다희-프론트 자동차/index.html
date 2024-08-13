@@ -2,7 +2,8 @@
 <html lang="ko">
 	<head>
 		<meta charset="UTF-8">
-		<title>자동차</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>bently.html</title>
 		<link rel="stylesheet" type="text/css" href="css/ben.css">
 		<style></style>
 	</head>
@@ -23,9 +24,11 @@
 								</ul>
 						</li>
 					</ul>
+				<div id="benVid">
 					<a href="#"><img src="images/ben.gif" alt="벤틀리 공식 홍보 영상" width="1700"></a>
+				</div>		
 				<div class="login">
-					<a href="#"><p>login</p></a>
+					<p id="Login"><a href="#">login</a></p>
 				</div>
 			</div><!--header 끝-->
 			<div class="side"></div><!--side 끝-->
@@ -68,39 +71,56 @@
 						</div>
 					</div><!--content3 끝-->
 					<div class="content4">
-						<h3>현재 지역/언어</h3>
-						<ul class="kor">
-							<li>대한민국/한국어</li>
-							<li>
-								<a href="#">변화</a>
-							</li>
-						</ul>
-						<ul class="info">
-							<li>뉴스레터
-								<a href="#">구독하기</a>
-							</li>
-							<li>문의사항
-								<a href="#">문의하기</a>
-							</li>
-							<li >소셜미디어
-								<a href="#" class="SNS"><img src="images/sns.png" alt="sns 로고"></a>
-							</li>
-						</ul>
+						
+						
 					</div><!--content4 끝-->
 			</div><!--container 끝-->
 			<div id="footer">
-				<ul>
-					<li>© 2024 Bentley Korea Ltd.</li>
-					<li><a href="#">Legal Notice</a>|</li>
-					<li><a href="#">개인정보처리방침</a>|</li>
-					<li><a href="#">쿠키 정책</a>|</li>
-					<li><a href="#">위치정보사업 이용약관</a>|</li>
-					<li><a href="#">위치기반서비스 이용약관</a>|</li>
-					<li><a href="#">부정비리 제보 시스템</a>|</li>
-					<li><a href="#">Open Source Software Notice</a>|</li>
-					<li><a href="#">Terms and Conditions</a>|</li>
-				</ul>
-				<address>Registered Office: Pyms Lane, Crewe, Cheshire, CW1 3PL, England. Registered in England: Number 992897</address>
+				<div id="footLeft">
+					<h3>현재 지역/언어</h3>
+						<div class="Lang">
+							<select id="languageSelect">
+								<option value="en">영어</option>
+								<option value="ko">한국어</option>
+								<option value="jp">일본어</option>
+								<option value="cn">중국어</option>
+							</select>
+						</div>
+				</div><!--footLeft 끝-->
+				<div id="footRight">
+					<div class="Info">
+						<div class="InfoTxt">
+							<h3>뉴스레터</h3>
+							<h3>문의사항</h3>
+							<h3 >소셜미디어</h3>
+						</div>
+						<div class="InfoClick">
+							<p class="구독"><a href="#">구독하기</a></p>
+							<p class="문의"><a href="#">문의하기</a></p>
+						</div>
+					</div>	
+					<div class="snsImg">
+						<a href="#" id="SNS"><img src="images/ico_face_w.png" alt="facebook 로고"></a>
+						<a href="#" id="SNS"><img src="images/ico_insta_w.png" alt="insta 로고"></a>
+						<a href="#" id="SNS"><img src="images/ico_yout_w.png" alt="youtube 로고"></a>
+					</div>
+				</div><!--footRight 끝-->
+				<div id="foot">
+					<ul>
+						<li>© 2024 Bentley Korea Ltd.</li>
+						<li><a href="#">Legal Notice</a>|</li>
+						<li><a href="#">개인정보처리방침</a>|</li>
+						<li><a href="#">쿠키 정책</a>|</li>
+						<li><a href="#">위치정보사업 이용약관</a>|</li>
+						<li><a href="#">위치기반서비스 이용약관</a>|</li>
+						<li><a href="#">부정비리 제보 시스템</a>|</li>
+						<li><a href="#">Open Source Software Notice</a>|</li>
+						<li><a href="#">Terms and Conditions</a>|</li>
+					</ul>
+					<address>Registered Office: Pyms Lane, Crewe, Cheshire, CW1 3PL, England. Registered in England: Number 992897</address>
+				</div><!--foot 끝-->
+
+				
 			</div><!--footer 끝-->
 		</div><!--wrap 끝-->
 	</body>

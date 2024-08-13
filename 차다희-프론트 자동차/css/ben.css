@@ -3,22 +3,34 @@
 
 
 body{margin:0; padding:0; font-family:arial;}
-#wrap{width:1700px; margin:0 auto;}
+#wrap{width:100%; margin:0 auto;}
 	#header{background-color:black;}
 		h1{text-align:center;}
 		
-		#gnb{float:left; font-family:arial; margin-top:-90px; margin-left:40px;}
-			#gnb>li{position:relative; }
+		#gnb{float:left; font-family:arial;}
+			#gnb>li{position:relative; top:-65px; left:75px;}
 			#gnb li a{ display:block; color:#fff; font-size:16px; text-decoration:none;}
 				.sub{position:absolute; display:none; top:100%;}
 				.sub li{width:100px;}
 				.sub li a{display:block; text-decoration:none;}
 				.sub li a:hover{ opacity:70%; text-decoration:none;}
 			#gnb>li:hover .sub{display:block;}	
-			.login{position:relative; top:-858px; left:1600px;}
+			#benVid{
+				text-align: center;
+				padding-bottom: 100px;
+			}
+			.login{}
+				#Login{
+					position: absolute;
+					top:5%;
+					left:90%;
+				}
+				#Login a{color: #fff;}
+				#Login a:hover{color: #fff;}
+
 			
 		#container{margin:20px 0;}
-			h2{text-align:center; font-weight:bold; font-family:arial; font-size:30px; margin-top:30px; }
+			h2{text-align:center; font-weight:bold; font-family:arial; font-size:30px; margin:100px 0; }
 				.content1{text-align:center;}
 					.content1 a{}
 					img{padding-top:10px;}
@@ -53,20 +65,75 @@ body{margin:0; padding:0; font-family:arial;}
 						.about ul li a{text-decoration:none; padding:10px; border:1px solid green; }
 						.about ul li a:hover{background-color:green; color:white; }
 						
-				.content4 {background-color:black; color:#fff; overflow:hidden;  clear:both; height:440px;}
-					.content4 h3{margin:30px 20px; font-size:18px; color:white;}
-						.kor li{position:relative; top:10px; left:20px;  font-size:18px;}
-						.kor li a{color:white; position:relative; top:-20px; left:170px;  font-size:16px;}
-						.info{margin-left:160px; text-align:center; margin-left:200px;}
-							.info li{float:left; display:inline; font-size:16px; margin-right:100px; margin-top:50px;}
-							.info li a{display:block; margin-top:50px; background-color:#fff; color:black; width:300px; height:70px; line-height:70px; border-radius:10px;}
-							.info li .SNS{background-color:black; border:none;}
-			/**/
-				#footer{ background-color:black; text-align:center; color:#fff; margin-top:-20px;  padding-left:20px; }
-				#footer li{text-align:center; display:inline; font-size:12px; margin-bottom:10px; margin-right:10px; }
-				#footer li a{color:#fff;}
-				address{clear:both;  color:#fff; padding-bottom:20px;}
-					
+				#footer{ 
+					width: 100%;
+					height: 500px;
+					position: relative; 
+					background-color:black; 
+					text-align:center; 
+					color:#fff; 
+					margin-top:-20px;  
+					font-size: 16px;
+					}
+					#footLeft{ position: relative;}
+					#footLeft h3{
+						position: absolute;
+						top:80px;
+						left:5%;
+					}
+						.Lang{position: relative;}
+							#languageSelect {
+								position: absolute;
+								top:130px;
+								left: 115px;
+								padding: 10px;
+								width: 100px;
+							}
+					#footRight {position: relative;}
+						.InfoTxt{
+							position: absolute;
+							top:80px;
+							left:35%;
+						}
+						.InfoTxt h3 {
+							float: left;
+							margin-right: 300px;
+						}
+						.InfoClick{
+							position: absolute;
+							top:250px;
+							left:32.5%;
+						}
+						.InfoClick a{
+							margin-right: 210px;
+							border-radius: 2px;
+							padding:10px 40px;
+							background-color: #fff;
+						}
+						.InfoClick a:hover{
+							text-decoration: none;
+							border-radius: 2px;
+							background-color: rgb(230, 230, 230);
+						}
+						.snsImg{
+							position: absolute;
+							top:150px;
+							left:70%;
+						}
+						.snsImg a{
+							margin-right: 30px;
+						}
+
+				#foot{position: relative; bottom: -450px;}		
+					#foot li{
+						text-align:center; 
+						display:inline; 
+						font-size:12px; 
+						margin-bottom:10px; 
+						margin-right:10px; }
+					#foot li a{color:#fff;}
+					address{clear:both;  color:#fff;}
+						
 					
 					
 					
