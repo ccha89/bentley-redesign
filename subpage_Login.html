@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bently subpage_login</title>
+    <link rel="stylesheet" type="text/css" href="css/subpage_Login.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<style></style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <h1><a href="index.html"><img src="images/bentlylogo.png" alt="벤틀리 로고"></a></h1>
+                <ul id="gnb">
+                    <li>
+                        <a href="#">메뉴</a>
+                            <ul class="sub">
+                                <li><a href="#">모델</a></li>
+                                <li><a href="#">컨설팅 구매</a></li>
+                                <li><a href="#">서비스</a></li>
+                                <li><a href="#">익스피리언스</a></li>
+                                <li><a href="#">센터찾기</a></li>
+                                <li><a href="#">MY PAGE</a></li>
+                            </ul>
+                    </li>
+                </ul>
+               
+        </div><!--header 끝-->
+        <div id="container">
+            <div class="conLeft">
+                <div id="conLeftImg">
+                    <img class="benImg" src="images/bentleyimg3.jpg" alt="벤틀리 모델 이미지">
+                </div>
+            </div><!--conLeft 끝-->
+            <div class="conRight">
+                <div class="login-wrap">
+                    <h2>BENTELY</h2>
+                    <form id="logForm" action="login.php" method="post">
+                        <input class="logName" type="text" name="Bentley ID*" required>
+                    </form>
+                    <div id="logTxt">
+                        <p class="logTxtId"><a href>계속</a></p>
+                    </div>
+                    <div id="logTxt2">
+                        <p class="logTxtpass">비밀번호 없이 로그인</p>
+                    </div>
+                    <div id="logTxt3">
+                        <p class="logTxtmail"><a href>이메일을 사용하여 계속</a></p>
+                    </div>
+                    <div id="logTxt4">
+                        <p class="lostId">계정이 없으신가요?</p>
+                        <p class="creatId"><a herf>가입하기</a></p>
+                    </div>
+                </div>
+            </div><!--conLeft 끝-->
+
+            <div class="conRight"></div><!--conRight 끝-->
+        </div> <!--container 끝-->
+
+        
+        <div id="footer">
+            <div id="footLeft">
+                <h3>현재 지역/언어</h3>
+                    <div class="Lang">
+                        <select id="languageSelect">
+                            <option value="en">영어</option>
+                            <option value="ko">한국어</option>
+                            <option value="jp">일본어</option>
+                            <option value="cn">중국어</option>
+                        </select>
+                    </div>
+            </div><!--footLeft 끝-->
+            <div id="footRight">
+                <div class="Info">
+                    <div class="InfoTxt">
+                        <h3>뉴스레터</h3>
+                        <h3>문의사항</h3>
+                        <h3 >소셜미디어</h3>
+                    </div>
+                    <div class="InfoClick">
+                        <p class="구독"><a href="#">구독하기</a></p>
+                        <p class="문의"><a href="#">문의하기</a></p>
+                    </div>
+                </div>	
+                <div class="snsImg">
+                    <a href="#" id="SNS"><img src="images/ico_face_w.png" alt="facebook 로고"></a>
+                    <a href="#" id="SNS"><img src="images/ico_insta_w.png" alt="insta 로고"></a>
+                    <a href="#" id="SNS"><img src="images/ico_yout_w.png" alt="youtube 로고"></a>
+                </div>
+            </div><!--footRight 끝-->
+            <div id="foot">
+                <ul>
+                    <li>© 2024 Bentley Korea Ltd.</li>
+                    <li><a href="#">Legal Notice</a>|</li>
+                    <li><a href="#">개인정보처리방침</a>|</li>
+                    <li><a href="#">쿠키 정책</a>|</li>
+                    <li><a href="#">위치정보사업 이용약관</a>|</li>
+                    <li><a href="#">위치기반서비스 이용약관</a>|</li>
+                    <li><a href="#">부정비리 제보 시스템</a>|</li>
+                    <li><a href="#">Open Source Software Notice</a>|</li>
+                    <li><a href="#">Terms and Conditions</a>|</li>
+                </ul>
+                <address>Registered Office: Pyms Lane, Crewe, Cheshire, CW1 3PL, England. Registered in England: Number 992897</address>
+            </div><!--foot 끝-->
+
+            
+        </div><!--footer 끝-->
+    </div> <!--wrap-->
+</body>
+</html>
