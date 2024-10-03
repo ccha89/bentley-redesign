@@ -1,0 +1,228 @@
+@charset "utf-8";
+@import url(reset.css);
+
+
+html,body{margin:0; padding:0; font-family:arial; overflow-x: hidden;}
+#wrap{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ 
+}
+	#header{
+        display: inline-block;
+        background-color:black;
+        padding-bottom: 70px;
+     }
+		h1{text-align:center;}
+		
+		#gnb{float:left; font-family:arial; z-index: 999;}
+			#gnb>li{position:relative; top:-65px; left:75px;}
+			#gnb li a{ display:block; color:#fff; font-size:16px; text-decoration:none;}
+				.sub{position:absolute; display:none; top:100%;}
+				.sub li{width:100px;}
+				.sub li a{display:block; text-decoration:none;}
+				.sub li a:hover{ opacity:70%; text-decoration:none;}
+			#gnb>li:hover .sub{display:block;}	
+
+            .bar {
+				position:fixed; 
+				bottom:100px; 
+				right:0px;
+				border-radius: 10px;
+				border: none;
+				z-index: 9999;
+				box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+				}	
+
+        #container{
+            clear: both;
+            background-color: black;
+            display: flex;
+            flex: 1; /* 컨텐츠가 늘어나면 footer는 아래로 내려갑니다 */
+        }
+            .conLeft, .conRight { height: 100vh; color:#fff; position: relative;  height: auto;  min-height: 800px;}
+            .conLeft{}
+                #conLeftImg{}
+                    .benImg{
+                        width: 700px;
+                        height: 100vh;
+                    }
+            .conRight{}
+                .login-wrap{
+                    position: relative;
+                    top: -120px;
+                    left: 20px;
+                }
+                    .login-wrap h2{
+                        color:#fff;
+                        font-size: 40px;
+                        position: absolute;
+                        top:300px;
+                        left:280px;
+                    }
+                    #logForm{
+                        position: absolute;
+                        top:380px;
+                        left:255px;
+                    }
+                        .logName{
+                            width: 230px;
+                            height: 35px;
+                            border-radius: 4px;
+                        }
+                    #logTxt{
+                        position: absolute;
+                        top:450px;
+                        left:255px;  
+                    }
+                  
+                    #logTxt a{
+                        border-radius: 4px;
+                        border: 1px solid #fff;
+                        padding:12px 105px;
+                        color: #fff;
+                    }
+                    #logTxt a:hover{
+                        text-decoration: none;
+                        border-radius: 2px;
+                        color:#000;
+                        background-color: rgb(230, 230, 230);
+                    }
+
+                        
+                    #logTxt2 {
+                        margin-top: 20px;
+                        color: #fff;
+                        text-align: center;
+                        position: relative;
+                        }
+                        
+                        .logTxtpass {
+                            display: inline-block;
+                            position: relative;
+                            top:510px;
+                            left:60px;
+                            color: #ffffff;
+                            }
+                            
+                        .logTxtpass::before, 
+                        .logTxtpass::after {
+                            content: '';
+                            display: inline-block;
+                            width: 230px;
+                            height: 1px;
+                            background-color: #969696;
+                            vertical-align: middle;
+                            margin: 0 10px;
+                            }
+                    #logTxt3{
+                        position: absolute;
+                        top:560px;
+                        left:255px;
+                    }                
+                    
+                    #logTxt3 a{
+                        border-radius: 4px;
+                        border: 1px solid #fff;
+                        padding:12px 52px;
+                        color: #fff;
+                    }
+                    #logTxt3 a:hover{
+                        text-decoration: none;
+                        border-radius: 2px;
+                        color:#000;
+                        background-color: rgb(230, 230, 230);
+                    }
+                    
+                        #logTxt4{
+                        position: relative;
+                        top:620px;
+                        left:255px;
+                        width: 230px;
+                    }
+                        .lostId{
+                            position: absolute;
+                            top:0;
+                            left:20px;
+                        }
+                        .creatId a{
+                            color: #fff;
+                            position: absolute;
+                            top:0;
+                            left:135px;
+                        }    
+            #footer{ 
+                        width: 100%;
+                        height: 500px;
+                        background-color: black;
+                        text-align: center;
+                        color: #ffffff;
+                        font-size: 16px;
+                            }
+                            #footLeft{ 
+                                position: relative;
+                                top:60px;
+                            }
+                            #footLeft h3{
+                                position: absolute;
+                                top:80px;
+                                left:5%;
+                            }
+                                .Lang{position: relative;}
+                                    #languageSelect {
+                                        position: absolute;
+                                        top:150px;
+                                        left: 90px;
+                                        padding: 10px;
+                                        width: 100px;
+                                    }
+                            #footRight {
+                                position: relative; 
+                                top:60px;
+                                left:50px;
+                            }
+                                .InfoTxt{
+                                    display: flex;
+                                    position: absolute;
+                                    top:80px;
+                                    left:400px;
+                                }
+                                .InfoTxt h3 {
+                                    margin-right: 290px;
+                                }
+                                .InfoClick{
+                                    position: absolute;
+                                    top:170px;
+                                    left:370px;
+                                }
+                                .InfoClick a{
+                                    border-radius: 2px;
+                                    padding:20px 60px;
+                                    background-color: #fff;
+                                }
+                                .InfoClick a:hover{
+                                    text-decoration: none;
+                                    border-radius: 2px;
+                                    background-color: rgb(230, 230, 230);
+                                }
+                                    .구독{margin-left: -390px;}
+                                    .문의{margin-left: 350px; margin-top: -20px;}
+                                .snsImg{
+                                    position: absolute;
+                                    top:150px;
+                                    right:260px;
+                                }
+                                .snsImg a{
+                                    margin-right: 30px;
+                                }
+        
+                        #foot{position: relative; bottom: -450px;}		
+                            #foot li{
+                                text-align:center; 
+                                display:inline; 
+                                font-size:12px; 
+                                margin-bottom:10px; 
+                                margin-right:10px; }
+                            #foot li a{color:#fff;}
+                            address{clear:both;  color:#fff;}

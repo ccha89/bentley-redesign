@@ -5,15 +5,51 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>subpage_model.html</title>
 		<link rel="stylesheet" type="text/css" href="css/subpage_model.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-        <script src="js/subpage_model.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/chatbot.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="js/chatbot.js"></script>
 		<style></style>
 	</head>
 	<body>
 		<div id="wrap">
 			<div id="header">
 				<h1><a href="index.html"><img src="images/bentlylogoB.png" alt="벤틀리 로고"></a></h1>
+			
+				<div class="bar">
+					<a href="#"><img class="chat" src="images/chatbot.png" alt="chat봇버튼" width="55px" height="55px"></a>
+				</div>
+				<div class="chatIntro">
+					<div class="chat-header">
+						<h3><a href="#"><img id="Logo-chat" src="images/BenB.png" alt="로고 이미지" ></a></h3>
+						<img id="main-chat-logo2" src="images/angle-left-solid.svg" alt="angle-left">
+					</div>
+					<div class="chat-body">
+						<div class="bodyTxt">
+							<p>안녕하세요. 벤틀리 코리아 입니다.<br/> 궁금하신 내용을 아래 항목에서 선택해 주세요.​</p>
+						</div>
+						
+						<div class="messages">
+							<p>벤틀리 전기차 배터리 제조사 안내</p>
+							<p>계약/시승/중고차 안내</p>
+							<p>Connect 관련</p>
+							<p>E-performance관련</p>
+							<p>AS관련</p>
+							<p>긴급출동</p>
+							<p>벤틀리 구독 서비스</p>
+							<p>기타</p>
+						</div>
+					</div>
+					<div class="chat-footer">
+						<!-- <input type="text" id="chat-input" placeholder="Type a message..."> 
+						<button id="send-message">Send</button>-->
+					</div>
+				</div> <!-- chat bot intro 끝 -->
+	
+				</div><!-- chat bot Main 끝 -->   
+			
+			
 			</div><!--header 끝-->
             
             <div id="container">
@@ -24,7 +60,11 @@
                         <img class="image" id="Img2" src="images/model-continentalGT.png" alt="continentalGT 사진">
                         <img class="image" id="Img3" src="images/model-bentayga.png" alt="bentayga 사진">
                     </div>
-                    <div class="Txt-Wrap">
+					<div class="large-image1"><img src="images/bgf.jpg" alt="flyingspur 사진" width="1300px" height="700px"></div>
+					<div class="large-image2"><img src="images/bgc2.jpg" alt="flyingspur 사진" width="1300px" height="700px"></div>
+					<div class="large-image3"><img src="images/bgb.jpg" alt="flyingspur 사진" width="1300px" height="700px"></div>
+                    
+					<div class="Txt-Wrap">
                         <p class="txt" id="flyingspur">FLYINGSPUR</p>
                         <p class="txt" id="continentalGT">CONTINENTAL GT</p>
                         <p class="txt" id="bentayga">BENTAYGA</p>
